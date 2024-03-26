@@ -39,7 +39,7 @@ const KongLoginAPI = {
 		case 401:
 		    throw KongError.InvalidInput;
 		case 404:
-		    throw KongError.AccountNotFound;
+		    throw KongError.NotFound;
 		case 500:
 		    throw KongError.InternalServer;
 		}

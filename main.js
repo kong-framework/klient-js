@@ -10,8 +10,9 @@ const KongError = {
     InvalidPassword: Error('Invalid Password. Length cannot be less than 10 characters long'),
     InvalidUsername: Error('Invalid Username. Length cannot be greater than 15 characters'),
     InvalidEmail: Error('Invalid email'),
-    AccountNotFound: Error('Account does not exist')
-}
+    NotFound: Error('Resource does not exist'),
+    Unauthorized: Error('Unauthorized, please login')
+};
 
 /// User input validator
 const Validate = {
@@ -39,4 +40,4 @@ const Validate = {
 	    throw KongError.InvalidPassword;
 	}
     }
-}
+};
